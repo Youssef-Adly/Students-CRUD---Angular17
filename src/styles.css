@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.validBadge {
+  display: block !important;
+  /* background-color: antiquewhite; */
+  width: 85% !important;
+  margin-top: 10px !important;
+  /* padding: 5px; */
+  border-radius: 10px !important;
+  text-indent: 15px !important;
+}

@@ -1,0 +1,88 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ahmed",
+      "age": "20",
+      "email": "ahmed@gmail.com",
+      "phone": "1111111111"
+    },
+    {
+      "id": "2",
+      "name": "Sara",
+      "age": "23",
+      "email": "sara@gmail.com",
+      "phone": "44444444444441"
+    },
+    {
+      "id": "3",
+      "name": "Samy",
+      "age": "22",
+      "email": "samy@gmail.com",
+      "phone": "987987987987987"
+    },
+    {
+      "id": "4",
+      "name": "sama",
+      "age": "25",
+      "email": "sama@gmail.com",
+      "phone": "4444444444"
+    },
+    {
+      "id": "6",
+      "name": "KOKO",
+      "age": "22",
+      "email": "koko@gmail.com",
+      "phone": "66666666666666"
+    },
+    {
+      "id": "7",
+      "name": "Younan",
+      "age": "35",
+      "email": "yuyu@aa.com",
+      "phone": "654987321654"
+    },
+    {
+      "id": "8",
+      "name": "Youssef",
+      "age": "28",
+      "email": "youssefadly404@gmail.com",
+      "phone": "0128562747"
+    },
+    {
+      "id": "9",
+      "name": "MarkWill",
+      "age": "28",
+      "email": "youssef@yahoo.com",
+      "phone": "258987654321654987654321"
+    },
+    {
+      "id": "12",
+      "name": "Mina",
+      "age": "35",
+      "email": "aa@aa",
+      "phone": "12321321"
+    },
+    {
+      "id": "14",
+      "name": "Aziz",
+      "age": "35",
+      "email": "aa@aa",
+      "phone": "5555555"
+    },
+    {
+      "id": "15",
+      "name": "Tom",
+      "age": "35",
+      "email": "tom@a",
+      "phone": "4654654"
+    },
+    {
+      "id": "17",
+      "name": "Noor Amr",
+      "age": "22",
+      "email": "aa@aa",
+      "phone": "11111111111"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+@if ( student ) {
+<div class="card border rounded-4">
+  <div class="card-body">
+    <h5 class="card-title">
+      <a routerLink="{{ student.id }}">student ID #{{ student.id }}</a>
+    </h5>
+    <p class="card-text">student Name: {{ student.name }}</p>
+    <a href="#" class="btn btn-danger" routerLink="update/{{ student.id }}">
+      Update
+    </a>
+  </div>
+</div>
+
+} @else {
+<div class="spinner-border ms-auto"></div>
+
+}

@@ -1,0 +1,106 @@
+@if ( student ) {
+<form class="row g-3 needs-validation" novalidate [formGroup]="updateForm">
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Student Name</label>
+    <input
+      formControlName="name"
+      type="text"
+      class="form-control"
+      id="validationCustom01"
+      placeholder="Enter Your Name"
+      [attr.disabled]="!updating"
+    />
+    <div *ngIf="name.valid" class="validBadge valid-feedback text-bg-success">
+      Looks good!
+    </div>
+    <div
+      *ngIf="!name.valid && !name.pristine"
+      class="validBadge invalid-feedback text-bg-danger"
+    >
+      Your Name Should Be More Then 3 Letters
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Age</label>
+    <input
+      formControlName="age"
+      type="text"
+      class="form-control"
+      id="validationCustom02"
+      [attr.disabled]="!updating"
+    />
+    <div *ngIf="age.valid" class="validBadge valid-feedback text-bg-success">
+      Looks good!
+    </div>
+    <div
+      *ngIf="!age.valid && !age.pristine"
+      class="validBadge invalid-feedback text-bg-danger"
+    >
+      Age Must Be between 20 and 40
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">Email</label>
+    <input
+      formControlName="email"
+      type="text"
+      class="form-control"
+      id="validationCustom03"
+      [attr.disabled]="!updating"
+    />
+    <div *ngIf="email.valid" class="validBadge valid-feedback text-bg-success">
+      valid Email.
+    </div>
+    <div
+      *ngIf="!email.valid && !email.pristine"
+      class="validBadge invalid-feedback text-bg-danger"
+    >
+      Please provide a valid Email.
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom04" class="form-label">Phone</label>
+    <input
+      formControlName="phone"
+      type="text"
+      class="form-control"
+      id="validationCustom04"
+      [attr.disabled]="!updating"
+    />
+    <div *ngIf="phone.valid" class="validBadge valid-feedback text-bg-success">
+      valid Phone.
+    </div>
+    <div
+      *ngIf="!phone.valid && !phone.pristine"
+      class="validBadge invalid-feedback text-bg-danger"
+    >
+      Please provide a valid Phone.
+    </div>
+  </div>
+  <div class="col-12 row my-5 gap-3 justify-content-around">
+    <button
+      class="col-12 col-md-5 btn btn-outline-primary"
+      type="submit"
+      #update
+      (click)="updateStudent($event)"
+    >
+      Update Student
+    </button>
+    <button
+      class="col-12 col-md-5 btn btn-outline-danger"
+      type="submit"
+      #delete
+      (click)="deleteStudent($event)"
+    >
+      Delete Student
+    </button>
+  </div>
+</form>
+
+} @else {
+<div class="d-flex justify-content-center align-items-center">
+  <div class="spinner-grow text-dark spinner-border-lg" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+}
